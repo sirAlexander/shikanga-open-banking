@@ -6,8 +6,11 @@ Open banking helps you move, manage and make more of your money. Opt-in to a wor
 
 https://www.openbanking.org.uk/glossary/
 
-__*[.underline]#eIDAS#* __=
+** __*[.underline]#eIDAS#* __=
 Electronic Identification and Trust Services
+** __*[.underline]#JWKMS#* __=
+Json Web Key Management Services
+** __*[.underline]#FAPI#* __= Financial Grade API
 
 == List of Open Banking Sandboxes
 * https://directory.ob.forgerock.financial/
