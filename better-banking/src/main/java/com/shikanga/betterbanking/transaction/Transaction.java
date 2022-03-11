@@ -11,7 +11,7 @@ import lombok.Value;
 public class Transaction {
     String type;
     LocalDateTime date;
-    Number accountNumber;
+    Integer accountNumber;
     String currency;
     BigDecimal amount;
     String merchantName;
