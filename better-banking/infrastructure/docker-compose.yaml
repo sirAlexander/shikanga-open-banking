@@ -3,6 +3,7 @@ version: '3.9'
 services:
   mysql:
     image: mysql:8
+    container_name: better-banking
     restart: always
     ports:
       - 3306:3306
@@ -12,7 +13,7 @@ services:
       - MYSQL_USER=betterbanking
       - MYSQL_DATABASE=betterbanking
     volumes:
-      - my-db:/var/lib/mysql
+      - mysql-data:/var/lib/mysql/data
 # Names our volume
 volumes:
-  my-db:
+  mysql-data:
