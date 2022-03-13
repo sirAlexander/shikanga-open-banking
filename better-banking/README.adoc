@@ -1,4 +1,4 @@
-We will use Docker and docker compsoe to ease the infrastructure installation
+We will use Docker and docker compose to ease the infrastructure installation
  
 ```
 docker-compose -f infrastructure/docker-compose.yaml up -d
