@@ -15,7 +15,7 @@ public class TransactionServiceTest {
 
     @Test
     void testTransactionCount() {
-        assertEquals(1, transactionService.findAllByAccountNumber(1234567).size());
+        assertEquals(2, transactionService.findAllByAccountNumber(1234567).size());
     }
 
 }
