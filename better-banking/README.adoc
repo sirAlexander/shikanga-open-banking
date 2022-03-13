@@ -1,0 +1,10 @@
+We will use Docker and docker compsoe to ease the infrastructure installation
+ 
+```
+docker-compose -f infrastructure/docker-compose.yaml up -d
+```
+
+Tear down the infrastructure with the following command:
+```
+docker-compose -f infrastructure/docker-compose.yaml down
+```
