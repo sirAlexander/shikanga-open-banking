@@ -1,6 +1,7 @@
 package com.shikanga.betterbanking.transaction;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,7 +19,10 @@ public class TransactionController {
 
 
     @GetMapping("/{accountNumber}")
-    public List<Transaction> findAllByAccountNumber(@PathVariable("accountNumber") final Integer accountNumber){
-        return transactionService.findAllByAccountNumber(accountNumber);
+    public List<TransactionDto> findAllByAccountNumber(@PathVariable("accountNumber") final Integer accountNumber){
+        return transactionService.findAllByAccountNumber(accountNumber)
+                .stream()
+                .map(TransactionDto::apply)
+                .collect(Collectors.toList());
     }
 }
